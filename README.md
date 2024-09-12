@@ -1,5 +1,5 @@
 # AugmentMNIST-CNN
-
+Augmented Digits.png
 ## Overview
 
 AugmentMNIST-CNN is a Python project that focuses on generating and augmenting the MNIST dataset using advanced image processing techniques and training a Convolutional Neural Network (CNN) on this augmented data. The augmentation includes adding noise, rotating the images, and applying multipliers to enhance the training dataset, leading to more robust and generalized models.
@@ -22,15 +22,9 @@ AugmentMNIST-CNN is a Python project that focuses on generating and augmenting t
 
 ## Requirements
 
-- Python 3.9
+- Python 3.9 (For Windows GPU Support)
 - TensorFlow 2.x
 - NumPy
 - Matplotlib
 - Scikit-learn
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/AugmentMNIST-CNN.git
-   cd AugmentMNIST-CNN
