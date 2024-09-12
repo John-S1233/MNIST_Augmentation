@@ -5,7 +5,7 @@ from tensorflow.keras import layers, models
 
 class MNISTGenerator:
     def __init__(self):
-        pass  # No initialization required as we are not using a pre-trained generator
+        pass 
 
     def apply_rotation(self, image, angle):
         image = tf.keras.preprocessing.image.apply_affine_transform(image, theta=angle, fill_mode='nearest')
@@ -32,13 +32,13 @@ class MNISTGenerator:
         for i in range(len(images)):
             image = images[i]
             
-            # Apply rotation first
+            # Apply rotation
             augmented_image = self.apply_rotation(image, rotation_values[i])
             
-            # Apply multiplier second
+            # Apply multiplier
             augmented_image = self.apply_multiplier(augmented_image, multiplier_values[i])
 
-            # Apply noise last
+            # Apply noise
             noisy_image = self.add_pixel_noise(augmented_image, noise_range)
 
             augmented_images.append(noisy_image)
