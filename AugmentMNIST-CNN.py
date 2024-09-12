@@ -83,9 +83,9 @@ class MNISTDataAugmentation:
         new_images = np.array(new_images)
         new_noise_values = np.array(new_noise_values).reshape(-1, 28, 28, 1)
         new_rotation_values = np.array(new_rotation_values).reshape(-1, 1, 1, 1)
-        new_rotation_values = np.tile(new_rotation_values, (1, 28, 28, 1))  # Broadcast to match shape
+        new_rotation_values = np.tile(new_rotation_values, (1, 28, 28, 1))
         new_multiplier_values = np.array(new_multiplier_values).reshape(-1, 1, 1, 1)
-        new_multiplier_values = np.tile(new_multiplier_values, (1, 28, 28, 1))  # Broadcast to match shape
+        new_multiplier_values = np.tile(new_multiplier_values, (1, 28, 28, 1))  
         new_labels = np.array(new_labels)
 
         # Convert original MNIST dataset to new format ((image, 0, 0, 1), number)
@@ -124,7 +124,7 @@ class MNISTDataAugmentation:
         for y in range(height):
             for x in range(width):
                 noisy_image[y, x] += np.random.uniform(noise_range[0], noise_range[1])
-        noisy_image = np.clip(noisy_image, 0, 1)  # Ensure pixel values remain in valid range [0, 1]
+        noisy_image = np.clip(noisy_image, 0, 1)
         return noisy_image
 
     def apply_rotation(self, image, angle):
