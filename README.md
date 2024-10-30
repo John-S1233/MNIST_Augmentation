@@ -12,8 +12,7 @@ AugmentMNIST-CNN is a Python project that focuses on generating and augmenting t
 - **Customizable Augmentation**: Parameters for augmentation can be easily modified to experiment with different noise levels, rotation angles, and multipliers.
 - **Efficient Dataset Handling**: Augmented datasets are generated, combined with the original MNIST dataset, and shuffled for optimal training.
 - **CNN Model Training**: A deep Convolutional Neural Network architecture is provided to train on the augmented dataset, ensuring improved accuracy and generalization.
-- **GPU Support**: GPU memory growth is enabled for efficient use of resources during training.
-
+  
 ## Project Structure
 
 - **`AugmentMNIST-CNN.py`**: Contains the core class `MNISTDataAugmentation`, which handles dataset augmentation, CNN model construction, and training. This script generates the augmented dataset and trains the model.
