@@ -23,7 +23,7 @@ AugmentMNIST-CNN is a Python project that focuses on generating and augmenting t
 
 ## Requirements
 
-- Python 3.9 (For Windows GPU Support)
+- Python 3.9
 - TensorFlow 2.x
 - NumPy
 - Matplotlib
