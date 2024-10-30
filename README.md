@@ -24,7 +24,7 @@ AugmentMNIST-CNN is a Python project that focuses on generating and augmenting t
 ## Requirements
 
 - Python 3.9
-- TensorFlow 2.x
+- TensorFlow 2.10
 - NumPy
 - Matplotlib
 - Scikit-learn
